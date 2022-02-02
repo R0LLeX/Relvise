@@ -1,0 +1,194 @@
+@import url(../css/normalize.css);
+@import url(../css/media.scss);
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1046px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+
+// ..................HEADER.............................................................................................
+
+.header {
+ position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    .header_flex {
+        display: flex;
+        min-height: 104px;
+        align-items: center;
+        .header_navigation_list {
+            display: flex;
+            margin: 0 0 0 136px;
+            li:not(:last-child) {
+                margin: 0 21px 0 0;
+            }
+            .link_menu_item {
+                color: #737373;
+                line-height: calc(24 / 14 * 100%);
+                font-weight: 600;
+            }
+        }
+        .logo_text {
+            font-size: 24px;
+            font-weight: 700;
+            color: inherit;
+        }
+    }
+    #menu-toggle {
+        display: none;
+    }
+}
+// ........................END HEADER..................................................................................................
+
+.page {
+    flex: 1 1 auto;
+}
+
+// ...............................SECTION PROMO........................................................................................
+.__ibg {
+    position: relative;
+}
+    .__ibg img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+.main-block {
+    position: relative;
+}
+
+.main-block__body{
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 410px;
+    .promo_title {
+        font-size: 58px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        line-height: calc(80 / 48 * 100%);
+    }
+    .promo_subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        line-height: calc(30 / 20 * 100%);
+        color: #737373;
+        // margin: 35px 0 35px 0;
+    }
+    .btn_wrapper {
+        display: flex;
+        .orange {
+            border-radius: 37px;
+            background-color: #ff7b47;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 36px;
+            min-height: 48px;
+            letter-spacing: 0.2px;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+        .transparent {
+            border-radius: 37px;
+            border: 1px solid #0D5C63;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 30px;
+            min-height: 48px;
+            letter-spacing: 0.2px;
+            color: #0D5C63;
+            font-weight: 700;
+        }
+    }
+}
+
+.main-block__body  > *:not(:last-child){
+    padding: 0 0 35px 0;
+}
+
+.main-block__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+    object-position: right;
+    height: 100%;
+
+}
+}
+
+// ...............................END SECTION PROMO........................................................................................
+
+// ...............................SECTION SERVICE........................................................................................
+
+.page_services {
+    width: 100%;
+    margin-top: -99px;
+    .container__services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .wrapper_item {
+            width: 31%;
+            min-height: 242px;
+            background-color: #fff;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+            z-index: 3;
+            .wrapper_item_min {
+                padding: 35px 40px;
+            }
+            .title_service {
+                font-size: 24px;
+                font-weight: 700;
+                color: #252B42;
+                line-height: calc(32 / 24 * 100%);
+                letter-spacing: 0.1px;
+            }
+            .title_white {
+                color: #fff;
+            }
+            .description_service {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: calc(20 / 14 * 100%);
+                color: #737373;
+                letter-spacing: 0.2px;
+            }
+            .description_white {
+                color: #fff;
+            }
+        }
+        .item_green {
+            background: #0D5C63;
+            box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        }
+    }
+}
+
+.wrapper_item_min > *:not(:last-child){
+    margin: 0 0 15px 0;
+}
+
+
+
