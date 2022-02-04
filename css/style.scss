@@ -185,10 +185,117 @@
         }
     }
 }
-
 .wrapper_item_min > *:not(:last-child){
     margin: 0 0 15px 0;
 }
 
+// ...............................END SECTION SERVICE........................................................................................
+
+
+// ...............................SECTION EXPERIENCE........................................................................................
+.title_all {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(57 / 40 * 100%);
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-align: center;
+}
+.description_all {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #737373;
+}
+
+
+
+
+.experience {
+    width: 100%;
+    background-color: #FAFAFA;
+    .description_experience {
+        padding: 10px 260px;
+    }
+    .wrapper_experience {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 80px 0;
+        .item_experience {
+            width: 23%;
+            min-height: 209px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            .subtitle_experience {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: calc(57 / 40 * 100%);
+                letter-spacing: 0.2px;
+                color: #252B42;
+            }
+            .description_experience_text {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: calc(24 / 14 * 100%);
+                letter-spacing: 0.1px;
+                color: #737373;
+            }
+        }
+    }
+    .item_experience > *:not(:last-child){
+        margin: 0 0 10px 0;
+    }
+}
+// ...............................END SECTION EXPERIENCE........................................................................................
+
+// ...............................SECTION ADVICE........................................................................................
+.advice {
+    width: 100%;
+    background-color: #FAFAFA;
+    .description_all__advice {
+        padding-top: 10px;
+    }
+    .wrapper_advice {
+        padding: 45px 0 80px 0;
+        display: flex;
+        justify-content: space-between;
+        .advice_item {
+            position: relative;
+            width: 22%;
+            min-height: 341px;
+            background-color: #fff;
+            .wrapper_for_text_advice {
+               padding: 30px 23px 0 30px;
+            
+                .subtitle_advice {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: calc(24 / 16 * 100%);
+                    letter-spacing: 0.1px;
+                    color: #252B42;
+                    padding-bottom: 15px;
+                 }
+                .description_advice {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: calc(20 / 14 * 100%);
+                    letter-spacing: 0.2px;
+                    color: #737373;
+                }
+        }
+        .icon_advice {
+            position: absolute;
+            bottom: 0;
+        }
+        }
+    }
+}
+// ...............................END SECTION ADVICE........................................................................................
 
 
