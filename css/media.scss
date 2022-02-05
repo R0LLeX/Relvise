@@ -23,7 +23,16 @@
   }
   .who_you_are .wrapper_video_content .most_text_block {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+  .who_you_are .wrapper_video_content .most_text_block .wrapper_text_item {
+    padding: 30px 20px 0 10px;
+}
+.who_you_are .wrapper_video_content .most_text_block .wrapper_text_item:not(:last-child) {
+  padding: 30px 20px 0 10px;
+}
 }
 @media (max-width: 976px) {
   br {
@@ -41,6 +50,15 @@
 @media (max-width: 934px) {
   .advice .wrapper_advice .advice_item .wrapper_for_text_advice {
     padding: 30px 15px 0 15px;
+  }
+}
+@media (max-width: 886px) {
+  .who_you_are .brands_wrapper {
+    margin-top: 40px;
+    padding: 70px 143px;
+  }
+  .who_you_are .brands_wrapper .item_brand {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 879px) {
@@ -75,6 +93,11 @@
   }
   .page_services .container__services .wrapper_item .wrapper_item_min {
     padding: 30px 20px;
+  }
+}
+@media (max-width: 752px) {
+  .who_you_are .brands_wrapper {
+    padding: 70px 73px;
   }
 }
 @media (max-width: 751px) {
@@ -128,6 +151,12 @@
   .experience .description_experience {
     padding: 10px 50px;
   }
+  .who_you_are .wrapper_video_content .video_wrapper .video_item {
+    width: 100%;
+  }
+  .who_you_are .title_all_who {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 634px) {
   .experience .title_all {
@@ -136,6 +165,17 @@
   .experience .wrapper_experience {
     padding: 35px 0 60px 0;
   }
+}
+@media (max-width: 612px) {
+  .who_you_are .brands_wrapper {
+    padding: 70px 50px;
+  }
+}
+@media (max-width: 580px) {
+.who_you_are .wrapper_video_content .most_text_block .title_most_text {
+  font-size: 30px;
+  margin-top: 50px;
+}
 }
 @media (max-width: 574px) {
   .experience .wrapper_experience .item_experience {
@@ -149,6 +189,11 @@
     padding: 10px 40px;
   }
 }
+@media (max-width: 566px) {
+  .who_you_are .brands_wrapper {
+    padding: 70px 10px;
+  }
+}
 @media (max-width: 524px) {
     .header .header_flex .header_navigation_list {
         margin-left: 55px;
@@ -156,10 +201,25 @@
     .experience .description_experience {
       padding: 10px 30px;
     }
+    .who_you_are .wrapper_video_content .most_text_block .description_most_text {
+      text-align: justify;
+    }
 }
 @media (max-width: 510px) {
   .experience .wrapper_experience .item_experience {
     min-width: 200px;
+  }
+}
+@media (max-width: 486px) {
+  .who_you_are .brands_wrapper {
+    justify-content: center;
+  }
+}
+@media (max-width: 453px) {
+  .who_you_are .wrapper_video_content .most_text_block .title_most_text {
+    letter-spacing: normal;
+    font-weight: 600;
+    font-size: 25px;
   }
 }
 @media (max-width: 450px) {
@@ -303,10 +363,32 @@
   .advice .wrapper_advice .advice_item {
     padding: 0;
 }
+.who_you_are .wrapper_video_content .most_text_block .wrapper_text_item .wrapper_subtext_and_title .subtext_item {
+  font-size: 13px;
+  letter-spacing: normal;
+}
+.who_you_are .wrapper_video_content .most_text_block .wrapper_text_item .wrapper_subtext_and_title {
+  padding-left: 10px;
+}
+}
+@media (max-width: 379px) {
+.who_you_are .wrapper_video_content .most_text_block .title_most_text {
+  text-align: center;
+}
+.who_you_are .wrapper_video_content .most_text_block .wrapper_text_item {
+  padding: 30px 0 0 0;
+}
+.who_you_are .wrapper_video_content .most_text_block .wrapper_text_item:not(:last-child) {
+  padding: 30px 0 0 0;
+}
 }
 @media (max-width: 366px) {
         .main-block__body .promo_subtitle {
             font-size: 17px;
+        }
+        .who_you_are .wrapper_video_content .most_text_block .wrapper_text_item .wrapper_subtext_and_title .subtext_item {
+          font-size: 13px;
+          font-weight: 500;
         }
 }
 @media (max-width: 348px) {
