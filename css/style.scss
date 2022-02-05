@@ -15,6 +15,21 @@
     box-sizing: content-box;
 }
 
+.title_all {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(57 / 40 * 100%);
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+.description_all {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(20 / 14 * 100%);
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
 
 // ..................HEADER.............................................................................................
 
@@ -89,7 +104,6 @@
         letter-spacing: 0.2px;
         line-height: calc(30 / 20 * 100%);
         color: #737373;
-        // margin: 35px 0 35px 0;
     }
     .btn_wrapper {
         display: flex;
@@ -193,32 +207,19 @@
 
 
 // ...............................SECTION EXPERIENCE........................................................................................
-.title_all {
-    padding-top: 80px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: calc(57 / 40 * 100%);
-    letter-spacing: 0.2px;
-    color: #252B42;
-    text-align: center;
-}
-.description_all {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: calc(20 / 14 * 100%);
-    letter-spacing: 0.2px;
-    text-align: center;
-    color: #737373;
-}
-
 
 
 
 .experience {
     width: 100%;
     background-color: #FAFAFA;
+    .title__experience {
+        padding-top: 80px;
+        text-align: center;
+    }
     .description_experience {
         padding: 10px 260px;
+        text-align: center;
     }
     .wrapper_experience {
         display: flex;
@@ -258,8 +259,13 @@
 .advice {
     width: 100%;
     background-color: #FAFAFA;
+    .title_all_advice {
+        padding-top: 125px;
+        text-align: center;
+    }
     .description_all__advice {
         padding-top: 10px;
+        text-align: center;
     }
     .wrapper_advice {
         padding: 45px 0 80px 0;
@@ -298,4 +304,70 @@
 }
 // ...............................END SECTION ADVICE........................................................................................
 
+// ...............................SECTION WHO YOU ARE........................................................................................
 
+.who_you_are {
+    width: 100%;
+    .title_all_who {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .description_all__who {
+        padding: 15px 10px 0 10px;
+        text-align: center;
+    }
+    .wrapper_video_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 20px 0 20px;
+        .video_wrapper {
+            width: 63%;
+        .video_item {
+            width: 600px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+        .most_text_block {
+            width: 333px;
+            .title_most_text {
+                margin-top: 20px;
+            }
+            .description_most_text {
+                padding-top: 10px;
+            }
+            .wrapper_text_item {
+                display: flex;
+                padding-top: 30px;
+                .wrapper_subtext_and_title {
+                    padding-left: 20px;
+                    .sub_title_who {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: calc(24 / 16 * 100%);
+                        color: #252B42;
+                        letter-spacing: 0.1px;
+                    }
+                    .subtext_item {
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: calc(24 / 14 * 100%);
+                        color: #737373;
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+            .wrapper_text_item:not(:last-child) {
+                padding-top: 50px;
+            }
+        }
+    }
+}
+
+// ............................... ENDSECTION WHO YOU ARE........................................................................................
+
+
+footer {
+    margin-top: 50px;
+    height: 100px;
+}

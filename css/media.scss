@@ -8,6 +8,23 @@
     padding: 30px 22px 0 20px;
   }
 }
+@media (max-width: 1031px) {
+  .who_you_are .wrapper_video_content {
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+  .who_you_are .wrapper_video_content .video_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .who_you_are .wrapper_video_content .video_wrapper .video_item {
+    width: 800px;
+  }
+  .who_you_are .wrapper_video_content .most_text_block {
+    width: 100%;
+  }
+}
 @media (max-width: 976px) {
   br {
     display: none;
@@ -33,22 +50,20 @@
   }
   .advice .wrapper_advice .advice_item {
     min-width: 40%;
+    display: flex;
+    justify-content: center;
   }
   .advice .wrapper_advice .advice_item .icon_advice {
-    position: static;
-  }
-   img {
-    margin: 0 auto;
-  }
-
-  .advice .wrapper_advice .advice_item {
-    position: static;
+    bottom: 50px;
   }
   .advice .wrapper_advice .advice_item .wrapper_for_text_advice .subtitle_advice {
     text-align: center;
   }
   .advice .wrapper_advice .advice_item .wrapper_for_text_advice .description_advice {
     text-align: center;
+  }
+  .advice .title_all_advice {
+    padding-top: 35px;
   }
 }
 @media (max-width: 794px) {
@@ -73,6 +88,14 @@
   }
   .experience .wrapper_experience .item_experience .subtitle_experience {
     font-size: 33px;
+  }
+  .advice .wrapper_advice .advice_item {
+    min-width: 100%;
+    padding: 0 10px;
+    min-height: 296px;
+  }
+  .advice .wrapper_advice .advice_item .icon_advice {
+    bottom: 40px;
   }
 }
 @media (max-width: 660px) {
@@ -274,6 +297,12 @@
   .description_all__advice {
     padding: 10px;
   }
+  .advice .wrapper_advice .advice_item .icon_advice {
+    bottom: 25px;
+  }
+  .advice .wrapper_advice .advice_item {
+    padding: 0;
+}
 }
 @media (max-width: 366px) {
         .main-block__body .promo_subtitle {
